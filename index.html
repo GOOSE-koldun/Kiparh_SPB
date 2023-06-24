@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия в Санкт-Петербург с КИПАРХ</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Trebuchet MS';
+    }
+
+    header {
+        text-align: center;
+        border-bottom: 2px solid #DEDEDE;
+    }
+
+    .text img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(20%) ;
+    }
+    .price1{
+        display: block;
+    }
+
+    
+    .text h1 {
+        position: absolute;
+        top:  40%;
+        left: 16%;
+        color: aliceblue;
+    }
+
+    .text p {
+        position: absolute;
+        top:  48%;
+        left: 16%;
+        color: aliceblue;
+    }
+
+    .price1 div {
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+    }
+
+    .price1 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .price2 div {
+        display: inline-block;
+        width: 300px;
+        height: 400px;
+    }
+
+    .price2 img {
+        width: 300px;
+        height: 220px;
+    }
+
+    main{
+    background-color: white;
+}   
+
+.fh1{
+    background-color: #9FA8B0;
+    text-align: center;
+    padding: 30px;
+}
+
+.fp{
+    width: 1200px;
+    float: left;
+    background-color: #B4BFCB;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-right: 100px;
+}
+
+
+    
+.h2{
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #9FA8B0;
+    padding: 30px;
+}
+
+.price1{
+    text-align: center;
+    display: block;
+}
+.price2{
+    text-align: center;
+    display: block;
+}
+.yes12{
+    display: inline-block;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid white;
+    margin-left: 200px;
+    width: 400px;
+}
+
+.block1{
+    display: block;
+    opacity: 0.5;
+    float: left;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.block1:hover{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.block2{
+    display: block;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.block2:hover{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.block3{
+    display: block;
+    opacity: 0.5;
+    float: right;
+    margin-right: 300px;
+    margin-top: 100px;
+}
+
+.block3:hover{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.block4{
+    display: block;
+    opacity: 0.5;
+    float: left;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.block4:hover{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.block5{
+    display: block;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.block5:hover{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.block6{
+    display: block;
+    opacity: 0.5;
+    float: right;
+    margin-right: 300px;
+    margin-top: 100px;
+}
+
+.block6:hover{
+    opacity: 1;
+    transition: all 1s linear;
+}
+
+.m{
+    border: 3px solid white;
+    width: 300px;
+}
+
+.t{
+    border: 3px solid white;
+    width: 300px;
+}
+
+.w{
+    border: 3px solid white;
+    width: 300px;
+}
+
+.tu{
+    border: 3px solid white;
+    width: 300px;
+}
+
+.f{
+    border: 3px solid white;
+    width: 300px;
+}
+
+.kartinki img{
+    width: 600px;
+    height: 900px;
+}
+
+.kartinki {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+}
+
+.kartinki img{
+    height: 300px;
+    width: 100px;
+}
+
+.programm{
+    text-align: center;
+    background-color: #9FA8B0;
+    padding: 30px;
+}
+
+.mama{
+    text-align: center;
+    background-color: #9FA8B0;
+    padding: 30px;   
+}
+
+.papa{
+    text-align: center;
+    background-color: #9FA8B0;
+    padding: 30px;
+}
+
+.son{
+    font-size:  30px;
+    background-image: linear-gradient(to right, white, grey);
+    height: 150px;
+    width: 1000px;
+    justify-content: space-between;
+    float: left;
+    display: flex;
+}
+
+.dau{
+    float: right;
+    font-size: 15px;
+    width: 700px;
+    border: 3px solid grey;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-170px);
+    transition: all 0s;
+}
+
+footer {
+
+        color: #303030;
+        text-align: center;
+        border-top: 1px solid #DEDEDE;
+    }
+
+.telegaimg {
+        height: 50px;
+        width: 50px;
+        border: 2px solid #303030;
+        border-radius: 1111px;
+    }
+
+.telegaimg:hover {
+        transform: scaleX(1.5) scaleY(1.5);
+        border: 0px solid black;
+        transition: 0.20s ease-in;
+    }
+
+.telegram {
+        margin-top: 100px;
+        width: 450px;
+        height: auto;
+        margin-left: 690px;
+    }
+
+.contact {
+        width: 450px;
+        height: auto;
+        float: left;
+        margin-top: 120px;
+    }
+
+.adres {
+        margin-left: 245px;
+        width: 450px;
+        height: auto;
+        float: right;
+    }
+</style>
+
+<body>
+    <header>
+        <centre>
+        <p><img src="https://pr1.zoon.ru/PZJnZJq0xE0zf5biCO5p5g/520x173,q85/4px-BW84_n0KMuxHYmTZcZNJpeUPCa5r-_KuglB662yr5FmUY7VCeTgFRpMx2DbwYKnd8u1JsV21BohSKUje8WsP3iGx_ERpbaoroNAC9gxqUvo-5ounHuj4ocaGtrpCQB0rtOe4d3aP__BwqxkLqVDZWw1OYN_UcUjaEnnIC0Y6N7d4G_e6_CwH-55HLAKQyX5g1pc8rZohglOJjwcEwIIIUEIV18p6dhX-hco00Pa6WPlptRvmFEoRaruuEDhKlkI9DwGOehurwd37tGip2I4-eVcXwjE9"/></p>
+        </centre>
+        <div><nav>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav></div>
+        <end>
+            <a href=""><img src=""></img></a>
+        </end>
+           
+        
+        
+    </header>
+    <main>
+        <div class="text">
+            <img src="https://s.zagranitsa.com/images/guides/18166/original/63334229d1575880644ca6c353171b7f.jpg?1452519927">
+            <h1>Архитектурное путешествие для детей по Санкт-Петербургу с 21.08 до 25.08</h1>
+            <p>Изучение истории и архитектуры города</p>
+        </div>
+        <section>
+            <article>
+                <h2 class = "fh1">Коротко о путешествии</h2>
+                <p class = "fp">Архитектурная экскурсия — это образовательно-туристическая программа по изучению лучшего опыта в сфере архитектуры, 
+                урбанистики и городского дизайна. Участники посетят г. Санкт-Петербург и его пригород и познакомятся с лучшими 
+                примерами исторической и современной архитектуры и урбанизма.</p>
+            </article>
+            <article class="yes12">
+            <p class = "sp">Стоимость по раннему бронированию до 31 июля:<br/>
+                50 000 руб.<br/>
+                45 000 руб.</p>
+            </article>
+            <h2 class = "h2">Что входит в стоимость поездки:</h2>
+            <article class="price1">
+                <div class="block1">
+                    <img class = "im" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/6b/da/3e/peterhof-palace-and-garden.jpg?w=500&h=400&s=1">
+                    <p>Изучение исторической и современной архитектуры Санкт-Петербурга<br/>
+                        Прогулка по самым знаковым и красивым местам Санкт-Петербурга с изучением архитектурных стилей и направлений.</p>
+                </div>
+                <div class="block2">
+                    <img class = "im1" src="https://viahotel.ru/pic/119221_large.jpg">
+                    <p>Экскурсии по городу и музеям<br/>
+                        Описание и характеристика изучаемых объектов, а также экскурсии по городу и в музеях.</p>
+                </div>
+                <div class="block3">
+                    <img class = "im2" src="https://flomaster.club/uploads/posts/2021-10/1634068087_56-flomaster-club-p-zarisovki-arkhitekturnikh-elementov-krasiv-61.jpg">
+                    <p>Пленэры и зарисовки архитектуры<br/>
+                        Для закрепления визуального образа здания, выявления его черт и деталей.</p>
+                </div>
+            </article>
+            <article class="price2">
+                <div class="block4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MAZ-203.945_in_Saint_Petersburg_%28img1%29.jpg/370px-MAZ-203.945_in_Saint_Petersburg_%28img1%29.jpg">
+                    <p>Перелет, все трансферы и логистика<br/>
+                        Все расходы на перемещение по городу и межгородом включены в стоимость поездке.</p>
+                </div>
+                <div class="block5">
+                    <img src="https://www.mgimo.ru/files2/y09_2014/228099/2et-1.jpg">
+                    <p>Питание<br/>
+                        Завтрак в отеле, а обед и ужины в кафе и столовых.</p>
+                </div>
+                <div class="block6">
+                    <img src="https://1arthotel.ru/upload/iblock/5af/5af51186afd5aaf7097ac928ec91996f.jpg">
+                    <p>Проживание в отеле 4* с завтраком<br/>
+                        Проживание в комфортных двухместных номерах с раздельными кроватями.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h1 class = "programm">Программа Путешествия</h1>
+            <article class="first">
+                <div class="m"> 
+                    <p>Понедельник 21 августа<br/>
+                        13:00 - Встреча в аэропорту в г. Сочи<br/>
+                        14:45 - Вылет на самолете из г. Сочи в г. Санкт-Петербург<br/>
+                        17:40 - Прилет в г. Санкт-Петербург<br/>
+                        18:00 - Трансфер до отеля на автобусе<br/>
+                        18:30 - Заселение в отель<br/>
+                        20:00 - Ужин<br/>
+                        22:00 - Отбой</p>
+                </div>
+                <div class="t">
+                    <p>Вторник 22 августа<br/>
+                        8:30 - Подъем<br/>
+                        9:00 - Завтрак в отеле<br/>
+                        10:00 - Сбор всех участников в холле отеля на экскурсию<br/>
+                        10:45 - Водная экскурсия по рекам и каналам города<br/>
+                        13:00 - Обед<br/>
+                        14:00 - Прогулка по Невскому проспекту (Казанский собор, Дом Зингер, Спас на Крови, Дворцовая площадь)<br/>
+                        16:00 - Посещение Эрмитажа с экскурсоводом<br/>
+                        19:00 - Ужин<br/>
+                        22:00 - Отбой</p>
+                </div>
+                <div class="w">
+                    <p>Среда 23 августа<br/>
+                        7:30 - Подъем<br/>
+                        8:00 - Завтрак в отеле<br/>
+                        8:50 - Встреча в холле отеля и отправка на Финляндский вокзал<br/>
+                        9:30 - Ласточка до г. Выборг<br/>
+                        10:45 - Прибытие в г. Выборг<br/>
+                        11:00 - Экскурсия по Библиотеке Алвара Аалто<br/>
+                        13:00 - Ласточка в г. Санкт-Петербург<br/>
+                        14:30 - Прибытие в г. Санкт-Петербург<br/>
+                        15:00 - Обед<br/>
+                        16:00 - Посещения острова Новая Голландия<br/>
+                        18:00 - Ужин<br/>
+                        19:00 - Отдых на обзорной площадке, настольные игры<br/>
+                        22:00 - Отбой</p>
+                </div>
+                <div class="tu">
+                    <p>Четверг 24 августа<br/>
+                        08:30 - Подъем<br/>
+                        9:00 - Завтрак в отеле<br/>
+                        10:00 - Трансфер на "метеоре" до Петергофа<br/>
+                        10:30 - Прогулка по Нижнему парку Петергофа<br/>
+                        12:00 - Трансфер на "метеоре" до г. Санкт-Петербург<br/>
+                        13:00 - Обед<br/>
+                        14:00 - Посещение "Севкабель" Порт<br/>
+                        16:00 - Посещение Российской национальной библиотеки<br/>
+                        18:00 - Посещение "Пяти Углов"<br/>
+                        19:00 - Ужин<br/>
+                        20:00 - Посещение обзорной площадки на крыше<br/>
+                        22:00 - Отбой</p>
+                </div>
+                <div class="f">
+                    <p>Пятница 25 августа<br/>
+                        7:30 - Подъем<br/>
+                        8:00 - Завтрак<br/>
+                        9:00 - Сбор в холле отеля и отправление в аэропорт<br/>
+                        11:10 - Вылет на самолете из г. Санкт-Петербург в г. Сочи<br/>
+                        14:05 - Прилет участников в г. Сочи</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h1 class = "mama">КАК ЭТО БЫЛО В ПРОШЛОМ ГОДУ</h1>
+            <article class="kartinki">
+                <p class = "son">Для нас поездка в Санкт-Петербург будет третьей, а путешествием 
+                    по стране седьмым по счету, поэтому мы с одной стороны уже 
+                    знаем самые интересные маршруты и объекты и с другой стороны 
+                    имеем собственный список вкусных заведений, где будем кушать.</p>
+            </article>
+                <p class = "dau">Кстати, уже сейчас вы можете увидеть все этапы подготовки 
+                    к поездке в нашем <a href="https://t.me/kiparharchstoyanie">
+                    Telegram-канале</a>: подробную информацию о проживании и 
+                    питании детей, увидеть фото и видео с прошлогодней поездки 
+                    и окунуться в атмосферу путешествия, а также познакомиться 
+                    с отзывами ребят. Также во время поездки вашего ребенка 
+                    будут сопровождать дипломированные архитекторы. На 5 детей 
+                    - 1 сопровождающий.</p>
+            </article>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <centre>
+            <div class="contact">
+                <h3>НАШИ КОНТАКТЫ:</h3>
+            
+                <p>Номер телефона: +7(993)993-21-35</p>
+                <p>Почта: schoolkiparh@gmail.com</p>
+            </div><br>
+            <div class="adres">
+                <h3>НАШ АДРЕС:</h3>
+                <p>Краснодар, ул. Красных Партизан 226, этаж 3, офис 303</p>
+            </div><br>
+            <div class="telegram">
+                <h3>НАШ ТЕЛЕГРАМ:</h3>
+                <p>Заходите в наш телеграм канал! Там много интересных новостей для вас.</p>
+                <a class="telega" href="https://t.me/kiparharchstoyanie"><img class="telegaimg" src="https://cdn.mypanel.link/do7r0s/rk64zfon6r6gde4c.png"/></a>
+            </div>
+            <h3>МЫ ЖДЁМ ВАС НА НАШЕМ КУРОРТЕ!</h3>
+        
+    </footer>
+    </body>
+</body>
+</html>
